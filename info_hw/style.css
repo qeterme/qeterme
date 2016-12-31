@@ -1,0 +1,34 @@
+h1 {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;}
+
+h2 {
+	font-family: 'Oswald', sans-serif;}
+
+p {
+	font-family: 'Open Sans', sans-serif;}
+
+/* div.one {
+	background-image: url(http://www.okclipart.com/img54/ftnrgqznsnfhtgiqemrk.jpg);}
+			
+div.two {
+	background-image: url(http://www.queness.com/resources/uploaded/Ez6hQih6TDGqrkMPXP1e_41012917_164337.jpg);}
+			
+div.three {
+	background-image: url(https://designrope.com/wp-content/uploads/2014/04/stock-photo-hero-1000x600.jpg);} */
+
+.col-xs-6 {
+	padding-top: 30px;
+	padding-bottom: 30px;}
+
+.jumbotron {
+	margin-top: 20px;}
+
+.footer-text {
+	color: #424242;
+	text-align: center;
+	background: #BCBCBC;
+	padding: 20px 0 20px 0;}
+
+i.red {
+	color: #D94052;}
