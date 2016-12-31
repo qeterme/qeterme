@@ -1,12 +1,15 @@
 h1 {
 	font-family: 'Oswald', sans-serif;
-	text-align: center;}
+	text-align: center;
+	}
 
 h2 {
-	font-family: 'Oswald', sans-serif;}
+	font-family: 'Oswald', sans-serif;
+	}
 
 p {
-	font-family: 'Open Sans', sans-serif;}
+	font-family: 'Open Sans', sans-serif;
+	}
 
 /* div.one {
 	background-image: url(http://www.okclipart.com/img54/ftnrgqznsnfhtgiqemrk.jpg);}
@@ -19,16 +22,46 @@ div.three {
 
 .col-xs-6 {
 	padding-top: 30px;
-	padding-bottom: 30px;}
+	padding-bottom: 30px;
+	}
 
 .jumbotron {
-	margin-top: 20px;}
+	margin-top: 20px;
+	margin-bottom: 10px;
+	}
 
-.footer-text {
+i.red {
+	color: #D94052;
+	}
+	
+.first {
+	background-color: #3E5CA5;
+	}	
+
+.second {
+	background-color: #4B45B2;
+	}	
+
+.third {
+	background-color: #3B82AA;
+	}	
+
+.fourth {
+	background-color: #466CAA;
+	}
+
+.fifth {
 	color: #424242;
 	text-align: center;
 	background: #BCBCBC;
-	padding: 20px 0 20px 0;}
+	padding: 20px 0 20px 0;
+	}
 
-i.red {
-	color: #D94052;}
+.text {
+	height: 300px;
+	}
+
+.navbar-center {
+	margin-left: auto;
+	margin-right: auto;
+	}
