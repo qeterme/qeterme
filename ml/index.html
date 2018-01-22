@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Mészáros Lőrinc beruházásai</title>
+	<script src="lib/typed.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="display-3">Mészáros Lőrinc beruházásainak összege</h1>
+			<p class="lead">Az Index.hu cikkén alapulva (18 nap alatt 100,38 milliárd Ft) eddig eltelt másodpercek megpénzesítve.</p>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h2 id="money"></h2>
+					</div>
+				</div>
+			</div>
+			<div class="col"></div>
+		</div>
+
+	</div>
+<script>
+	var jan1 = new Date("2018-01-01");
+	var now = new Date();
+	var diff = Math.abs((now.getTime() - jan1.getTime()) / 1000);
+	var money = Math.round(diff * 64531);
+	
+	var moneyPlace = document.getElementById("money");
+	moneyPlace.innerHTML = new Intl.NumberFormat('hu-HU').format(money) + " Ft";
+	
+	function update() {
+		var jan1 = new Date("2018-01-01");
+		var now = new Date();
+		var diff = Math.abs((now.getTime() - jan1.getTime()) / 1000);
+		var money = Math.round(diff * 64531);
+		var beforeMoney = Math.round((diff - 1) * 64531);
+		
+		var options = {
+			strings: [new Intl.NumberFormat('hu-HU').format(beforeMoney) + " Ft", new Intl.NumberFormat('hu-HU').format(money) + " Ft"],
+			typeSpeed: 15,
+			backSpeed: 15,
+			smartBackspace: false,
+			showCursor: false
+		}
+
+		var typed = new Typed("#money", options);
+	}
+	
+	setInterval(update, 1000);
+</script>
+</body>
+</html>
